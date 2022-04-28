@@ -254,7 +254,7 @@ Config.Products = {
             type = "item",
             slot = 15,
             requiredJob = { "mechanic" }
-        },        
+        },      
     },
     ["weedshop"] = {
         [1] = {
@@ -422,6 +422,102 @@ Config.Products = {
             type = 'item',
             slot = 1,
         }
+    },
+    ["blackmarketitems"] = {
+        [1] = {
+            name = "weapon_dagger",
+            price = 2000,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 1,
+        },
+        [2] = {
+            name = "weapon_pumpshotgun_mk2",
+            price = 18000,
+            amount = 25,
+            info = {},
+            type = "item",
+            slot = 2,
+            requiresLicense = true
+        },
+        [3] = {
+            name = "weapon_smg_mk2",
+            price = 24000,
+            amount = 25,
+            info = {},
+            type = "item",
+            slot = 2,
+            requiresLicense = true
+        },
+        [4] = {
+            name = "weapon_carbinerifle_mk2",
+            price = 28000,
+            amount = 25,
+            info = {},
+            type = "item",
+            slot = 3,
+            requiresLicense = true
+        },
+        [5] = {
+            name = "weapon_heavysniper_mk2",
+            price = 40000,
+            amount = 25,
+            info = {},
+            type = "item",
+            slot = 4,
+            requiresLicense = true
+        },
+        [6] = {
+            name = "weapon_gusenberg",
+            price = 48000,
+            amount = 25,
+            info = {},
+            type = "item",
+            slot = 4,
+            requiresLicense = true
+        },
+        [7] = {
+            name = "weapon_combatmg_mk2",
+            price = 56000,
+            amount = 25,
+            info = {},
+            type = "item",
+            slot = 4,
+            requiresLicense = true
+        },
+        [8] = {
+            name = "shotgun_ammo",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 5,
+        },
+        [9] = {
+            name = "rifle_ammo",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 6,
+        },
+        [10] = {
+            name = "snp_ammo",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 7,
+        },
+        [11] = {
+            name = "mg_ammo",
+            price = 250,
+            amount = 250,
+            info = {},
+            type = "item",
+            slot = 7,
+        },
     },
 }
 
@@ -965,6 +1061,73 @@ Config.Locations = {
         ["products"] = Config.Products["leisureshop"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
+        ["blipcolor"] = 0
+    },
+
+    -- Black Market Locations
+    ["blackmarket"] = {
+        ["label"] = "Black Market",
+        ["coords"] = vector4(2461.33, 1574.54, 33.11, 331.25),
+        ["ped"] = 's_m_y_dockwork_01',
+        ["scenario"] = "WORLD_HUMAN_DRUG_DEALER_HARD",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Market",
+        ["products"] = Config.Products["blackmarketitems"],
+        ["showblip"] = false,
+        ["blipsprite"] = 150,
+        ["blipcolor"] = 0
+    },
+    ["blackmarket2"] = {
+        ["label"] = "Black Market",
+        ["coords"] = vector4(66.72, 3692.77, 39.75, 9.69),
+        ["ped"] = 's_m_m_trucker_01',
+        ["scenario"] = "WORLD_HUMAN_DRUG_DEALER_HARD",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Market",
+        ["products"] = Config.Products["blackmarketitems"],
+        ["showblip"] = false,
+        ["blipsprite"] = 150,
+        ["blipcolor"] = 0
+    },
+    ["blackmarket3"] = {
+        ["label"] = "Black Market",
+        ["coords"] = vector4(-436.21, 6154.0, 31.48, 357.37),
+        ["ped"] = 's_m_m_gaffer_01',
+        ["scenario"] = "WORLD_HUMAN_DRUG_DEALER_HARD",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Market",
+        ["products"] = Config.Products["blackmarketitems"],
+        ["showblip"] = false,
+        ["blipsprite"] = 150,
+        ["blipcolor"] = 0
+    },
+    ["blackmarket4"] = {
+        ["label"] = "Black Market",
+        ["coords"] = vector4(295.61, -932.5, 56.46, 89.69),
+        ["ped"] = 's_m_y_dealer_01',
+        ["scenario"] = "WORLD_HUMAN_DRUG_DEALER_HARD",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Market",
+        ["products"] = Config.Products["blackmarketitems"],
+        ["showblip"] = false,
+        ["blipsprite"] = 150,
+        ["blipcolor"] = 0
+    },
+    ["blackmarket5"] = {
+        ["label"] = "Black Market",
+        ["coords"] = vector4(-1837.95, 436.28, 126.11, 122.16),
+        ["ped"] = 's_f_y_hooker_02',
+        ["scenario"] = "WORLD_HUMAN_DRUG_DEALER_HARD",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "Open Market",
+        ["products"] = Config.Products["blackmarketitems"],
+        ["showblip"] = false,
+        ["blipsprite"] = 150,
         ["blipcolor"] = 0
     },
 }
